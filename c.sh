@@ -460,7 +460,7 @@ caddy_install(){
 
 	Default_caddy
 	#caddy官方脚本
-	curl https://getcaddy.com | bash -s personal
+	wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/caddy_install.sh && chmod +x caddy_install.sh && bash caddy_install.sh
 
 	#添加自启动 加载配置文件
 	touch /etc/systemd/system/caddy.service
